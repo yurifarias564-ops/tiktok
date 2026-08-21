@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidade — AnimeVortex</title>
+<style>
+  :root {
+    --bg: #f6f5f9;
+    --surface: #ffffff;
+    --ink: #1c1b24;
+    --ink-soft: #57546b;
+    --accent: #5b4b8a;
+    --accent-soft: #efe9fb;
+    --border: #e2dfec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15141b;
+      --surface: #1c1b24;
+      --ink: #eceaf6;
+      --ink-soft: #aba7c4;
+      --accent: #a692e8;
+      --accent-soft: #2a2440;
+      --border: #2c2a3a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15141b;
+    --surface: #1c1b24;
+    --ink: #eceaf6;
+    --ink-soft: #aba7c4;
+    --accent: #a692e8;
+    --accent-soft: #2a2440;
+    --border: #2c2a3a;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(32px, 5vw, 44px);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin: 0 0 48px;
+  }
+
+  .lede {
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin: 0 0 56px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section {
+    display: flex;
+    gap: 20px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  section:last-of-type { border-bottom: none; }
+
+  .num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  section h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+
+  section p {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--ink);
+    margin: 0 0 10px;
+    max-width: 62ch;
+  }
+  section p:last-child { margin-bottom: 0; }
+
+  section a { color: var(--accent); }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrap">
+  <p class="eyebrow">AnimeVortex</p>
+  <h1>Política de Privacidade</h1>
+  <p class="meta">Última atualização: 21 de agosto de 2026</p>
+
+  <p class="lede">
+    O AnimeVortex é uma ferramenta pessoal que corta vídeos e agenda a
+    publicação desses cortes na conta do TikTok do próprio usuário. Esta
+    página explica, de forma direta, quais dados a ferramenta usa e o que
+    nunca é feito com eles.
+  </p>
+
+  <section>
+    <span class="num">1</span>
+    <div>
+      <h2>Quem opera esta ferramenta</h2>
+      <p>
+        O AnimeVortex é desenvolvido e operado por uma única pessoa, para uso
+        próprio e individual — não é um produto comercial nem coleta dados de
+        um público geral de usuários.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">2</span>
+    <div>
+      <h2>Login com o TikTok</h2>
+      <p>
+        Ao conectar sua conta, o login acontece inteiramente na página oficial
+        do TikTok (OAuth). A ferramenta nunca vê nem armazena sua senha do
+        TikTok em nenhum momento.
+      </p>
+      <p>
+        O que recebemos após o login: um token de acesso e as permissões que
+        você autorizar (publicar vídeos e ler informações básicas do perfil).
+        Esse token é usado apenas para publicar, na sua conta, os vídeos que
+        você mesmo agendar dentro da ferramenta.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">3</span>
+    <div>
+      <h2>Vídeos enviados</h2>
+      <p>
+        Os vídeos enviados para corte são processados e armazenados
+        localmente, no computador onde a ferramenta está rodando. Eles não são
+        enviados a nenhum servidor de terceiros — a única exceção é o próprio
+        TikTok, no momento exato em que um corte agendado é publicado.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">4</span>
+    <div>
+      <h2>Compartilhamento de dados</h2>
+      <p>
+        Nenhum dado é vendido, alugado ou compartilhado com terceiros. As
+        únicas trocas de informação são as necessárias para publicar, via API
+        oficial do TikTok, o conteúdo que você mesmo escolheu agendar.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">5</span>
+    <div>
+      <h2>Retenção e exclusão</h2>
+      <p>
+        O token de acesso fica armazenado localmente, no dispositivo onde a
+        ferramenta roda, e pode ser removido a qualquer momento apagando o
+        arquivo de configuração local.
+      </p>
+      <p>
+        O acesso do aplicativo à sua conta também pode ser revogado a
+        qualquer momento diretamente nas configurações de segurança da sua
+        conta do TikTok.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">6</span>
+    <div>
+      <h2>Contato</h2>
+      <p>
+        Dúvidas sobre esta política podem ser enviadas para
+        <a href="mailto:yurifarias564@gmail.com">yurifarias564@gmail.com</a>.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    Esta política pode ser atualizada; a versão vigente estará sempre
+    disponível nesta mesma URL. Ver também os
+    <a href="./terms.html">Termos de Serviço</a>
+    do AnimeVortex.
+  </footer>
+</div>
+</body>
+</html>
